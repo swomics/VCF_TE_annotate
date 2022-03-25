@@ -43,7 +43,7 @@ for line in f:
     create_insert_extend(var_dict,ID[0]+ID[1],key,[fields[6],fields[7],fields[3],fields[2]])
 
 
-print(var_dict)
+#print(var_dict)
 #read the input file
 myvcf=pysam.VariantFile(args.vcf,"r")
 
