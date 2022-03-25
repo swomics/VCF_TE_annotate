@@ -38,7 +38,7 @@ for line in f:
     fields = l.split("\t")
     ID = fields[0].split("_")
     key = make_allele_key(ID)
-    print(key,fields)
+    #print(key,fields)
     #print(key)
     create_insert_extend(var_dict,ID[0]+ID[1],key,[fields[6],fields[7],fields[3],fields[2]])
 
@@ -71,4 +71,4 @@ for variant in myvcf:
         #variant.samples[sample]['TE']=TE_data
         #print(variant.samples[sample].get('GT')[0])
     bcf_out.write(variant)
-    print(variant)
+    #print(variant)
